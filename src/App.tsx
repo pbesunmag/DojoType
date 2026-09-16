@@ -35,7 +35,7 @@ function App() {
     setAnimating(false);
 
     try {
-      const activeTypes = getAvailableTypes(currentGenConfig.hasFairy);
+      const activeTypes = getAvailableTypes(generation);
       const id = getRandomPokemonId(currentGenConfig.maxId);
       const poke = await fetchPokemon(id);
 
